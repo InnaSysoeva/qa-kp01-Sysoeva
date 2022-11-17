@@ -1,16 +1,21 @@
 class LogFile:
     def __init__ (self, name, head = None):
-        pass
+        self.name = name
+        self.head = head
+        self.content = ''
+        if self.head != None:
+            self.head.elementsCount += 1
+            head.files.append(self)
 
     def delete(self):
         pass
 
-    def readFile(self):
+    def read(self):
         pass
 
     def move(self, path):
         pass
 
-    def appendLog(self, log):
+    def addLog(self, log):
         pass
 

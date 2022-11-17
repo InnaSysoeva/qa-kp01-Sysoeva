@@ -1,6 +1,12 @@
 class BufferFile:
     def __init__(self, name, head = None, max_buff_file_elem = 0):
-        pass
+        self.name = name
+        self.head = head
+        self.max_elem = max_buff_file_elem
+        self.content = []
+        if self.head != None:
+            self.head.elementsCount += 1
+            head.files.append(self)
 
     def move(self, path):
         pass
@@ -11,6 +17,6 @@ class BufferFile:
     def push(self, element):
         pass
 
-    def consumeElement(self):
+    def consume(self):
         pass
 
