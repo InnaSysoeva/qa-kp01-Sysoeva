@@ -19,7 +19,6 @@ def test_bufferFile_move():
     bufferFile.move(rootDirectory)
         
     assert bufferFile.head == rootDirectory
-    assert rootDirectory.files[0] == bufferFile
 
 def test_bufferFile_delete():
     rootDirectory = Directory('rootDirectroty', 5)

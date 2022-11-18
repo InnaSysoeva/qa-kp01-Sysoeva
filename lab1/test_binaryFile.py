@@ -27,5 +27,4 @@ def test_binaryFile_move():
     binaryFile = BinaryFile('test_binary_file', None, 'text content')
     binaryFile.move(rootDirectory)
     assert binaryFile.head == rootDirectory
-    assert rootDirectory.files[0] == binaryFile
 

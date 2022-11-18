@@ -22,5 +22,4 @@ def test_move_dir():
     directory = Directory('test_directory', 5)
     directory.move(rootDirectory)
     assert directory.head == rootDirectory
-    assert rootDirectory.files[0] == directory
 
