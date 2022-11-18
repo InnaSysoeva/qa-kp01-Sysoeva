@@ -11,6 +11,7 @@ fileSystem = FileSystem('File system', 100)
 #creating directory and move it into file system
 dir1 = Directory('dir1', 5)
 fileSystem.addFile(dir1)
+fileSystem.addFile(None)
 
 #adding nested directory into dir1
 dir2 = Directory('dir2', 3)
@@ -55,3 +56,10 @@ log2 = LogFile('log2', dir3)
 log3 = LogFile('log3', dir3)
 print('Files in dir3')
 dir3.read()
+
+#adding files into full directory or file
+dir4 = Directory('dir4', 1)
+log4 = LogFile('log4', dir4)
+log5 = LogFile('log4', dir4)
+dir4.read()
+

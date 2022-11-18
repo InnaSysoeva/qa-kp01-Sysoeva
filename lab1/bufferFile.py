@@ -43,6 +43,9 @@ class BufferFile:
         del self
 
     def push(self, element):
+        if(element == None):
+            print('NoneType element. Impossible to add.')
+            return
         if(len(self.content) == self.max_elem):
             print('Buffer file is full. Impossible to add file.')
             return

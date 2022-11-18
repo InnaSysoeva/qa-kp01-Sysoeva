@@ -45,5 +45,8 @@ class LogFile:
             path.files.insert(path.elementsCount, self)
 
     def addLog(self, log):
+        if(log == None):
+            print('NoneType log. Impossible to add.')
+            return
         self.content += log + '\n'
 

@@ -7,6 +7,9 @@ class FileSystem:
         self.max_el = max_el
     
     def addFile(self, file):
+        if(file == None):
+            print('NoneType file. Impossible to add.')
+            return
         if(self.max_el == self.elementsCount):
             print('File system is full.')
             return
